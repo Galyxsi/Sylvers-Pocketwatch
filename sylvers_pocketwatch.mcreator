@@ -3,7 +3,7 @@
     {
       "name": "FarmlandRecipe",
       "type": "recipe",
-      "sortid": 2,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "farmland_recipe",
@@ -30,7 +30,7 @@
     {
       "name": "BlazeSheet",
       "type": "item",
-      "sortid": 3,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blaze_sheet",
@@ -44,7 +44,7 @@
     {
       "name": "NetheritePressingRecipe",
       "type": "recipe",
-      "sortid": 4,
+      "sortid": 6,
       "compiles": true,
       "locked_code": true,
       "registry_name": "netherite_pressing_recipe",
@@ -57,7 +57,7 @@
     {
       "name": "AlloyFluid",
       "type": "fluid",
-      "sortid": 5,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "metal_slurdge",
@@ -76,7 +76,7 @@
     {
       "name": "MetalSlurdgeMixingRecipe",
       "type": "recipe",
-      "sortid": 6,
+      "sortid": 7,
       "compiles": true,
       "locked_code": true,
       "registry_name": "metal_slurdge_mixing_recipe",
@@ -89,7 +89,7 @@
     {
       "name": "BlazeSheetMixingRecipe",
       "type": "recipe",
-      "sortid": 7,
+      "sortid": 8,
       "compiles": true,
       "locked_code": true,
       "registry_name": "blaze_sheet_mixing_recipe",
@@ -102,7 +102,7 @@
     {
       "name": "BlazeSteelArmor",
       "type": "armor",
-      "sortid": 8,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blaze_steel_armor",
@@ -193,6 +193,29 @@
           }
         ]
       }
+    },
+    {
+      "name": "AlloyFluidMobplayerCollidesBlock",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alloy_fluid_mobplayer_collides_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/sylverspocketwatch/procedures/AlloyFluidMobplayerCollidesBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -227,8 +250,14 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "pehkui",
+      "jade",
+      "create",
+      "jei"
+    ],
     "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.sylverspocketwatch",
     "lockBaseModFiles": false
   },

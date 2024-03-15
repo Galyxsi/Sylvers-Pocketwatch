@@ -40,6 +40,9 @@
     "tickRate": 0,
     "flammability": 0,
     "fireSpreadSpeed": 0,
-    "colorOnMap": "SILVER"
+    "colorOnMap": "SILVER",
+    "onEntityCollides": {
+      "name": "AlloyFluidMobplayerCollidesBlock"
+    }
   }
 }
