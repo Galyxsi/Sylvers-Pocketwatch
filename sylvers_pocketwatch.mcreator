@@ -40,6 +40,19 @@
           "src/main/resources/assets/sylvers_pocketwatch/models/item/blaze_sheet.json"
         ]
       }
+    },
+    {
+      "name": "NetheritePressingRecipe",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_pressing_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/sylvers_pocketwatch/recipes/netherite_pressing_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
