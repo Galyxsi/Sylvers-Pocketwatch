@@ -22,9 +22,20 @@ public class SylversPocketwatchModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 
+		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(SylversPocketwatchModItems.BLAZE_STEEL_ARMOR_HELMET.get());
+			tabData.accept(SylversPocketwatchModItems.BLAZE_STEEL_ARMOR_CHESTPLATE.get());
+			tabData.accept(SylversPocketwatchModItems.BLAZE_STEEL_ARMOR_LEGGINGS.get());
+			tabData.accept(SylversPocketwatchModItems.BLAZE_STEEL_ARMOR_BOOTS.get());
+		}
+
 		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(SylversPocketwatchModItems.NETHERITE_SHEET.get());
 			tabData.accept(SylversPocketwatchModItems.BLAZE_SHEET.get());
+		}
+
+		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(SylversPocketwatchModItems.METAL_SLURDGE_BUCKET.get());
 		}
 	}
 }

@@ -1,4 +1,12 @@
 {
+  "block.sylvers_pocketwatch.metal_slurdge": "Metal Slurdge",
+  "item.sylvers_pocketwatch.metal_slurdge_bucket": "Alloy Fluid Bucket",
+  "item.sylvers_pocketwatch.blaze_steel_armor_helmet": "Blaze Steel Helmet",
+  "item.sylvers_pocketwatch.blaze_steel_armor_leggings": "Blaze Steel Leggings",
   "item.sylvers_pocketwatch.netherite_sheet": "Netherite Sheet",
+  "fluid.sylvers_pocketwatch.metal_slurdge": "Metal Slurdge",
+  "block.sylvers_pocketwatch.brittle_magma": "Brittle Magma",
+  "item.sylvers_pocketwatch.blaze_steel_armor_chestplate": "Blaze Steel Chestplate",
+  "item.sylvers_pocketwatch.blaze_steel_armor_boots": "Blaze Steel Boots",
   "item.sylvers_pocketwatch.blaze_sheet": "Blaze Sheet"
 }

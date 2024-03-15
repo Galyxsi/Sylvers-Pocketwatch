@@ -31,6 +31,9 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.sylverspocketwatch.init.SylversPocketwatchModTabs;
 import net.mcreator.sylverspocketwatch.init.SylversPocketwatchModItems;
+import net.mcreator.sylverspocketwatch.init.SylversPocketwatchModFluids;
+import net.mcreator.sylverspocketwatch.init.SylversPocketwatchModFluidTypes;
+import net.mcreator.sylverspocketwatch.init.SylversPocketwatchModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -50,10 +53,14 @@ public class SylversPocketwatchMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
+		SylversPocketwatchModBlocks.REGISTRY.register(bus);
+
 		SylversPocketwatchModItems.REGISTRY.register(bus);
 
 		SylversPocketwatchModTabs.REGISTRY.register(bus);
 
+		SylversPocketwatchModFluids.REGISTRY.register(bus);
+		SylversPocketwatchModFluidTypes.REGISTRY.register(bus);
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

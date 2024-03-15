@@ -1,16 +1,14 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    "a"
-  ],
-  "key": {
-    "a": {
+  "type": "create:pressing",
+
+  "ingredients": [
+    {
       "item": "minecraft:netherite_ingot"
     }
-  },
-  "result": {
-    "item": "sylvers_pocketwatch:netherite_sheet",
-    "count": 1
-  }
+  ],
+  "results": [
+  		{
+    	"item": "sylvers_pocketwatch:netherite_sheet"
+    	}
+    ]
 }

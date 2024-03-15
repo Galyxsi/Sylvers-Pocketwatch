@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "sylvers_pocketwatch:block/brittlemagma",
+    "up": "sylvers_pocketwatch:block/brittlemagma",
+    "north": "sylvers_pocketwatch:block/brittlemagma",
+    "east": "sylvers_pocketwatch:block/brittlemagma",
+    "south": "sylvers_pocketwatch:block/brittlemagma",
+    "west": "sylvers_pocketwatch:block/brittlemagma",
+    "particle": "sylvers_pocketwatch:block/brittlemagma"
+  },
+  "render_type": "solid"
+}

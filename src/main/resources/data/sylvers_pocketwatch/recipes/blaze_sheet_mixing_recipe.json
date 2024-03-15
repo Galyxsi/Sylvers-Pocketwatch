@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "item": "sylvers_pocketwatch:netherite_sheet"
+    },
+    {
+      "amount": 125,
+      "fluid": "sylvers_pocketwatch:metal_slurdge"
+      "nbt": {}
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    }
+  ],
+  "results": [
+    {
+    "item": "sylvers_pocketwatch:blaze_sheet"
+    }
+  ]
+}

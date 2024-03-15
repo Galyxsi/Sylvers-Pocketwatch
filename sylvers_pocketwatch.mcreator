@@ -46,11 +46,151 @@
       "type": "recipe",
       "sortid": 4,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "netherite_pressing_recipe",
       "metadata": {
         "files": [
           "src/main/resources/data/sylvers_pocketwatch/recipes/netherite_pressing_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "AlloyFluid",
+      "type": "fluid",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_slurdge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/sylverspocketwatch/item/AlloyFluidItem.java",
+          "src/main/resources/assets/sylvers_pocketwatch/models/block/metal_slurdge.json",
+          "src/main/java/net/mcreator/sylverspocketwatch/fluid/types/AlloyFluidFluidType.java",
+          "src/main/java/net/mcreator/sylverspocketwatch/block/AlloyFluidBlock.java",
+          "src/main/resources/assets/sylvers_pocketwatch/models/item/metal_slurdge_bucket.json",
+          "src/main/java/net/mcreator/sylverspocketwatch/fluid/AlloyFluidFluid.java",
+          "src/main/resources/assets/sylvers_pocketwatch/blockstates/metal_slurdge.json"
+        ]
+      }
+    },
+    {
+      "name": "MetalSlurdgeMixingRecipe",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "metal_slurdge_mixing_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/sylvers_pocketwatch/recipes/metal_slurdge_mixing_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BlazeSheetMixingRecipe",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "blaze_sheet_mixing_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/sylvers_pocketwatch/recipes/blaze_sheet_mixing_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BlazeSteelArmor",
+      "type": "armor",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_steel_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/sylvers_pocketwatch/models/item/blaze_steel_armor_helmet.json",
+          "src/main/java/net/mcreator/sylverspocketwatch/item/BlazeSteelArmorItem.java",
+          "src/main/resources/assets/sylvers_pocketwatch/models/item/blaze_steel_armor_leggings.json",
+          "src/main/resources/assets/sylvers_pocketwatch/models/item/blaze_steel_armor_boots.json",
+          "src/main/resources/assets/sylvers_pocketwatch/models/item/blaze_steel_armor_chestplate.json"
+        ]
+      }
+    },
+    {
+      "name": "BlazeSteelArmorBootsTickEvent",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_steel_armor_boots_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/sylverspocketwatch/procedures/BlazeSteelArmorBootsTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BrittleMagma",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brittle_magma",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/sylvers_pocketwatch/models/block/brittle_magma.json",
+          "src/main/java/net/mcreator/sylverspocketwatch/block/BrittleMagmaBlock.java",
+          "src/main/resources/assets/sylvers_pocketwatch/blockstates/brittle_magma.json",
+          "src/main/resources/assets/sylvers_pocketwatch/models/item/brittle_magma.json"
+        ]
+      }
+    },
+    {
+      "name": "BrittleMagmaUpdateTick",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brittle_magma_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/sylverspocketwatch/procedures/BrittleMagmaUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
@@ -59,7 +199,15 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.sylvers_pocketwatch.metal_slurdge": "Metal Slurdge",
+      "item.sylvers_pocketwatch.metal_slurdge_bucket": "Alloy Fluid Bucket",
+      "item.sylvers_pocketwatch.blaze_steel_armor_helmet": "Blaze Steel Helmet",
+      "item.sylvers_pocketwatch.blaze_steel_armor_leggings": "Blaze Steel Leggings",
       "item.sylvers_pocketwatch.netherite_sheet": "Netherite Sheet",
+      "fluid.sylvers_pocketwatch.metal_slurdge": "Metal Slurdge",
+      "block.sylvers_pocketwatch.brittle_magma": "Brittle Magma",
+      "item.sylvers_pocketwatch.blaze_steel_armor_chestplate": "Blaze Steel Chestplate",
+      "item.sylvers_pocketwatch.blaze_steel_armor_boots": "Blaze Steel Boots",
       "item.sylvers_pocketwatch.blaze_sheet": "Blaze Sheet"
     }
   },
